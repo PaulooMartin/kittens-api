@@ -1,0 +1,4 @@
+<h1>Editing <%= @kitten.name %></h1>
+
+<%= render partial: "form", locals: {kitten: @kitten} %>
+<%= button_to "Remove kitten", kitten_path(@kitten), {method: :delete} %>
